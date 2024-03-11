@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/dota.jpg">
+        <section class="container tm-page-1-content">
+          <div class="row">
+            <div class="col-md-6 ml-auto tm-text-white">
+              <header><h1>Мой Сайт</h1></header>
+            </div>
+          </div>
+        </section>
+      </div>
+
+        <nav>
+            <ul>
+                <li><a href="akatsuki.html" title="нажми на меня">Акацуки</a></li>
+                <li><a href="espada.html" title="нажми на меня">Эспада</a></li>
+            </ul>
+        </nav>
+     <section>
+    <br class="main-content">
+        <p>Это мой тестовый сайт, для того чтобы я прокачал свои навыки в программировании.</p>
+
+        <details>
+          <summary>Кто я?</summary>
+          <p>Я Данияр, в данный момент создаю свой сайт, на подобии аниме. Посмотрим что из этого выйдет. Потыкай тут че можешь. CSS я еще не знаю.</p>
+        </details>
+        
+        <div>
+          <main>В процессе разработки</main>
+        <progress max="100" value="10">
+          В процессе
+        </progress>
+        </div>
+        <div>
+          <main>Установи дату</main>
+          <input type="datetime-local"><br><br>
+        </div>
+        <img src="img\dota.jpg" width="auto" height="auto" alt="DOTA">
+                
+     </section>
+
+
+    <footer>
+        <p>&copy; <i>2024 years Daniyar.</i></p>
+    </footer>
+  <script src="script.js">
+            
+    function setCarousel() {
+
+  var slider = $('.tm-img-slider');
+
+  if (slider.hasClass('slick-initialized')) {
+    slider.slick('destroy');
+  }
+
+  if($(window).width() > 991){
+      // Slick carousel
+      slider.slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+    }
+    else {
+     slider.slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    });
+   }
+ }
+
+ $(document).ready(function(){
+
+  setCarousel();
+  $('.tm-img-slider').magnificPopup({
+    delegate: 'a',
+    type: 'image'
+  });
+
+  $(window).resize(function() {
+    setCarousel();
+  });
+});
+  </script>
+</body>
+</html>
+

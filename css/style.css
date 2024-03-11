@@ -1,0 +1,66 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #000000;
+  background-image: url('https://rare-gallery.com/uploads/posts/781534-DOTA-2-Phantom-assassin-mortred-Warriors.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #8d1a87;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #981e96;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  margin-bottom: 0;
+  background-color: #b41499;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
